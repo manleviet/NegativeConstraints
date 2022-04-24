@@ -4,6 +4,9 @@ import org.chocosolver.solver.Model;
 import org.chocosolver.solver.constraints.nary.cnf.LogOp;
 import org.chocosolver.solver.variables.BoolVar;
 
+/**
+ * Right way to deal with negative constraints for feature models.
+ */
 public class Main3 {
     static Model model;
     static BoolVar Smartwatch;
