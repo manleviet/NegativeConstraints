@@ -14,7 +14,20 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <cacdr.version>1.0.1-alpha-29</cacdr.version>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>github-maven-repository</id>
+            <repositories>
+                <repository>
+                    <id>github-maven-repository</id>
+                    <url>https://maven.pkg.github.com/HiConfiT/*</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 
     <dependencies>
 <!--        <dependency>-->
@@ -24,9 +37,9 @@
 <!--        </dependency>-->
 
         <dependency>
-            <groupId>at.tugraz.ist.ase</groupId>
+            <groupId>at.tugraz.ist.ase.hiconfit</groupId>
             <artifactId>fm</artifactId>
-            <version>1.2.10</version>
+            <version>${cacdr.version}</version>
         </dependency>
 
         <dependency>
